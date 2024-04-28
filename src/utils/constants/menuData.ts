@@ -15,127 +15,73 @@ import { MenuDataProps } from "../../types/menu/MenuTypes";
 function menuData(currentAcademicYear: string): MenuDataProps[] {
     return [
         {
-            title: "Navigation",
+            title: "Calendar",
             displayInDashboard: false,
             subItem: [
                 {
                     dashBoardIcon: home,
-                    sidebarIcon: home,
-                    title: "Home",
+                    sidebarIcon: glyph,
+                    title: "General details",
                     showBadge:false,
                     program: "programId",
                     leftLabel: "Total",
                     appName: "SEMIS",
                     formLink: "home",
-                    route: `home`,
+                    route: `generalDetails`,
+                    disabled: false
+                },
+                {
+                    dashBoardIcon: home,
+                    sidebarIcon: gauge,
+                    title: "Non-school days",
+                    showBadge:false,
+                    program: "programId",
+                    leftLabel: "Total",
+                    appName: "SEMIS",
+                    formLink: "home",
+                    route: `non-school-days`,
                     disabled: false
                 }
             ]
         },
         {
-            title: "Students",
+            title: "Terms",
             displayInDashboard: true,
             subItem: [
                 {
                     dashBoardIcon: enrollment,
-                    sidebarIcon: listAdd,
-                    title: "Enrollment",
+                    sidebarIcon: fileDocument,
+                    title: "Term 1",
                     program: "programId",
                     showBadge:false,
                     leftLabel: "Total",
                     appName: "SEMIS-Enrollment",
                     formLink: "form-enrollment",
-                    route: `enrollment?sectionType=student&academicYear=${currentAcademicYear}`,
+                    route: `term1`,
                     disabled: false
                 },
                 {
                     dashBoardIcon: attendance,
-                    sidebarIcon: glyph,
-                    title: "Attendance",
+                    sidebarIcon: fileDocument,
+                    title: "Term 2",
                     program: "programId",
                     showBadge:false,
                     leftLabel: "Total",
                     appName: "SEMIS-Attendance",
                     formLink: "form-attendance",
-                    route: `attendance?sectionType=student&academicYear=${currentAcademicYear}`,
+                    route: `term2`,
                     disabled: false
                 },
                 {
                     dashBoardIcon: performance,
                     sidebarIcon: fileDocument,
-                    title: "Performance",
+                    title: "Term 3",
                     showBadge:false,
                     program: "programId",
                     leftLabel: "Total",
                     appName: "SEMIS-Performance",
                     formLink: "form-performance",
-                    route: `performance?sectionType=student&academicYear=${currentAcademicYear}`,
-                    disabled: false
-                },
-                {
-                    dashBoardIcon: result,
-                    sidebarIcon: gauge,
-                    title: "Final result",
-                    showBadge:false,
-                    program: "programId",
-                    leftLabel: "Pending",
-                    appName: "SEMIS-Final-Result",
-                    formLink: "form-final-result",
-                    route: `final-result?sectionType=student&academicYear=${currentAcademicYear}`,
-                    disabled: false
-                },
-                {
-                    dashBoardIcon: transfer,
-                    sidebarIcon: logOut,
-                    title: "Transfer",
-                    showBadge:false,
-                    program: "programId",
-                    leftLabel: "Total",
-                    appName: "SEMIS-Transfer",
-                    formLink: "form-student-transfer",
-                    route: "transfer?sectionType=student",
-                    disabled: false
-                }
-            ]
-        },
-        {
-            title: "Staff",
-            displayInDashboard: true,
-            subItem: [
-                {
-                    dashBoardIcon: enrollment,
-                    sidebarIcon: userGroup,
-                    title: "Staff registry",
-                    showBadge:false,
-                    program: "programId",
-                    leftLabel: "Total",
-                    appName: "SEMIS-Enrollment",
-                    formLink: "form-enrollment-teacher",
-                    route: `enrollment?sectionType=staff&academicYear=${currentAcademicYear}`,
-                    disabled: false
-                },
-                {
-                    dashBoardIcon: attendance,
-                    sidebarIcon: glyph,
-                    showBadge:false,
-                    title: "Attendance",
-                    program: "programId",
-                    leftLabel: "Total",
-                    appName: "SEMIS-Attendance",
-                    formLink: "form-staff-attendance",
-                    route: `attendance?sectionType=staff&academicYear=${currentAcademicYear}`,
-                    disabled: false
-                },
-                {
-                    dashBoardIcon: transfer,
-                    sidebarIcon: logOut,
-                    showBadge:false,
-                    title: "Transfer",
-                    program: "programId",
-                    leftLabel: "Total",
-                    appName: "SEMIS-Transfer",
-                    formLink: "form-staff-transfer",
-                    route: `transfer?sectionType=staff`,
+                    route: `term3`,
                     disabled: false
                 }
             ]

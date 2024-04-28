@@ -1,19 +1,39 @@
 import { Navigate } from "react-router-dom";
 import React from "react";
 import { SideBarLayout, SimpleLayout } from "../../layout"
-import { Home } from "../../pages";
+import { GeneralDetails, NonSchoolDays,Terms} from "../../pages";
 
 export default function RouteList() {
     return [
         {
             path: "/",
             layout: SimpleLayout,
-            component: () => <Navigate to="/home" replace />
+            component: () => <Navigate to="/generalDetails" replace />
         },
         {
-            path: "/home",
+            path: "/generalDetails",
             layout: SideBarLayout,
-            component: Home
+            component: GeneralDetails
+        },
+        {
+            path: "/non-school-days",
+            layout: SideBarLayout,
+            component: NonSchoolDays
+        },
+        {
+            path: "/term1",
+            layout: SideBarLayout,
+            component: Terms
+        },
+        {
+            path: "/term2",
+            layout: SideBarLayout,
+            component: Terms
+        },
+        {
+            path: "/term3",
+            layout: SideBarLayout,
+            component: Terms
         }
     ]
 }
