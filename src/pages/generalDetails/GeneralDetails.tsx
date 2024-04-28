@@ -1,8 +1,11 @@
 import React from 'react'
+import { WithPadding } from '../../components'
 
 function GeneralDetails() {
   return (
-    <div>GeneralDetails</div>
+    <WithPadding padding="10px 30px">
+      <div>GeneralDetails</div>
+    </WithPadding>
   )
 }
 

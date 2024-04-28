@@ -2,7 +2,6 @@ import React from 'react';
 import style from "../SideBar.module.css"
 import { Badge } from '../../../badge';
 import classNames from 'classnames';
-import { useConfig } from '@dhis2/app-runtime';
 import { MenuDataItemProps } from '../../../../types/menu/MenuTypes';
 import { Link, useLocation } from 'react-router-dom';
 

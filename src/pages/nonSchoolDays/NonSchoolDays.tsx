@@ -1,8 +1,11 @@
 import React from 'react'
+import { WithPadding } from '../../components'
 
 const NonSchoolDays = () => {
   return (
-    <div>NonSchoolDays</div>
+    <WithPadding padding="10px 30px">
+      <div>NonSchoolDays</div>
+    </WithPadding>
   )
 }
 
