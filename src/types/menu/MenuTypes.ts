@@ -1,10 +1,12 @@
 interface MenuDataProps {
     title: string
+    displayInMenu?: boolean
     displayInDashboard?: boolean
     subItem: MenuDataItemProps[]
 }
 
 interface MenuDataItemProps {
+    displayInMenu?: boolean
     dashBoardIcon: string
     sidebarIcon:string
     title: string

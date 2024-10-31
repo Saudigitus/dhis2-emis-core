@@ -16,6 +16,7 @@ function menuData(currentAcademicYear: string): MenuDataProps[] {
     return [
         {
             title: "Navigation",
+            displayInMenu: true,
             displayInDashboard: false,
             subItem: [
                 {
