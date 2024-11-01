@@ -21,6 +21,7 @@ function menuData(currentAcademicYear: string): MenuDataProps[] {
             subItem: [
                 {
                     dashBoardIcon: home,
+                    displayInMenu: true,
                     sidebarIcon: home,
                     title: "Home",
                     showBadge:false,

@@ -9,7 +9,7 @@ export default function SideBarItem({ title, subItem }: MenuDataProps): React.Re
         <section className={style.sideBarItemContainer}>
             <SideBarItemTitle title={title} />
             <ul className={style.sideBarItemListContainer}>
-                {subItem.map((item:MenuDataItemProps, index) => (
+                {subItem?.filter((item) => item.displayInMenu).map((item:MenuDataItemProps, index) => (
                     <SideBarSubItem program='' leftLabel='' dashBoardIcon='' formLink='' route={item.route} key={index} sidebarIcon={item.sidebarIcon} title={item.title} showBadge={item.showBadge} disabled={item.disabled} appName={item.appName} />
                 ))}
             </ul>
